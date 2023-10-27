@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="imagem/png" href="IMG/icon-nav.png" />
+
+  <meta name="description" content="Stard_End" />
+  <meta name="copyright" content="© 2020 - 2023 Stard_End - All Rights Reserved." />
+  <meta name="author" content="Stard_End" />
+
+  <meta property="og:title" content="Stard_End" />
+  <meta property="og:site_name" content="Stard_End" />
+  <meta property="og:url" content=https://lakshanrukantha.github.io />
+  <meta property="og:description" content="Stard_End" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/img/photo-intro.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.typekit.net/rrg4put.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZW2LKR6BL"></script>
+</head>
+
+<body id="to-top" class="noselect">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon btn-dark"></span>
+      </button>
+      <img src="img/start.jpg" id="logo" />
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto navbar-links">
+          <li class="nav-card-item">
+            <a class="nav-link js-scroll-trigger noselect" onclick="toAbout()">Sobre</a>
+          </li>
+          <li class="nav-card-item">
+            <a class="nav-link js-scroll-trigger noselect" onclick="toSkills()">Skills</a>
+          </li>
+          <li class="nav-card-item">
+            <a class="nav-link js-scroll-trigger noselect" onclick="toProjects()">Projects</a>
+          </li>
+          <li class="nav-card-item">
+            <a class="nav-link js-scroll-trigger noselect" onclick="toMilestones()">Milestones</a>
+          </li>
+          <li class="nav-card-item">
+            <a class="nav-link js-scroll-trigger noselect" onclick="toContact()">Contact</a>
+          </li>
+          <li class=" nav-item " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a class="login nav-link text-white">Entrar_ou_Cadastrar</a>
+          </li>
+          <!--LOGIN-->
+          <div class="col-1 d-flex align-items-end pb-2">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content p-4">
+                  <h3 class="mb-4">Olá! Seja Bem Vindo.</h3>
+                  <button class="btn bt-log mb-4"><a href="loginAluno.html" class="tx">Fazer Login como:
+                      Aluno.</a></button>
+                  <button class="btn bt-log mb-4"><a href="loginProf.html" class="tx">Fazer Login como:
+                      Professor.</a></button>
+                  <button class="btn bt-log mb-4"><a href="cadastroAluno.html" class="tx">Cadastrar-se como
+                      Aluno</a></button>
+                  <button class="btn bt-log mb-4"><a href="cadastroProf.html" class="tx">Cadastrar-se como
+                      Professor</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="scroll-progress-track">
+        <div id="progress-bar" class="scroll-progress-thumb"></div>
+      </div>
+
+    </div>
+  </nav>
+  <div class="page-content">
+    <main>
+      <!-- Intro -->
+      <section id="intro">
+        <div class="container intro" data-aos="fade-down" data-aos-duration="1000">
+          <div class="text">
+            <h1>
+              <h1 class="intro-animation">
+                <span class="green my-name">Stard_End</span>
+              </h1>
+              <br />
+            </h1>
+            <p>
+              Seja bem-vindo (a) a esta emocionante aventura! <br>
+              Estamos muito satisfeitos por ter você entre nós<br>
+              e mal podemos esperar para compartilharmos<br>
+              momentos inesquecíveis.<br>
+              Nossa maior preocupação é te proporcionar uma<br>
+              experiência maravilhosa, repleta não apenas de<br>
+              conhecimento enriquecedor, mas também de<br>
+              muitas interatividades.
+            </p>
+            <div class="intro-btns">
+              <a href="#" class="button btn-contact contact-btn hb-fill-right-bg noselect" onclick="toContact()"><i
+                  class="fa-regular fa-envelope fa-lg"></i>
+                <span>Entre_em_Contato</span></a>
+            </div>
+          </div>
+          <div class="img-astro">
+            <img src="img/astrou.png" onContextMenu="return false;" loading="lazy" class="astrounaut pulsate-bck"
+              alt="intro-image" />
+          </div>
+        </div>
+      </section>
+      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <style>
+          .path-0 {
+            animation: pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes pathAnim-0 {
+            0% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            25% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 70.93846153846152,195.9897435897436 141.87692307692305,191.9794871794872 233,204 C 324.12307692307695,216.0205128205128 435.4307692307692,244.07179487179485 515,256 C 594.5692307692308,267.92820512820515 642.4,263.73333333333335 713,261 C 783.6,258.26666666666665 876.9692307692308,256.99487179487176 956,252 C 1035.0307692307692,247.00512820512822 1099.7230769230769,238.2871794871795 1178,229 C 1256.2769230769231,219.7128205128205 1348.1384615384616,209.85641025641024 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            50% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 79.91025641025641,201.23076923076923 159.82051282051282,202.46153846153848 249,214 C 338.1794871794872,225.53846153846152 436.6282051282052,247.38461538461536 516,262 C 595.3717948717948,276.61538461538464 655.6666666666667,284 722,263 C 788.3333333333333,242.00000000000003 860.7051282051282,192.6153846153846 948,171 C 1035.2948717948718,149.3846153846154 1137.5128205128203,155.53846153846152 1222,165 C 1306.4871794871797,174.46153846153848 1373.2435897435898,187.23076923076923 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            75% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 60.45384615384617,191.85897435897436 120.90769230769234,183.71794871794873 202,180 C 283.09230769230766,176.28205128205127 384.8230769230769,176.9871794871795 481,186 C 577.1769230769231,195.0128205128205 667.8,212.33333333333331 757,221 C 846.2,229.66666666666669 933.9769230769232,229.67948717948718 997,234 C 1060.0230769230768,238.32051282051282 1098.2923076923075,246.94871794871796 1168,242 C 1237.7076923076925,237.05128205128204 1338.8538461538462,218.52564102564102 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            100% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+          }
+        </style>
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 62.43333333333334,168.3025641025641 124.86666666666667,136.6051282051282 219,129 C 313.1333333333333,121.3948717948718 438.9666666666666,137.88205128205126 522,143 C 605.0333333333334,148.11794871794874 645.2666666666668,141.86666666666665 718,158 C 790.7333333333332,174.13333333333335 895.9666666666667,212.65128205128207 974,232 C 1052.0333333333333,251.34871794871793 1102.8666666666666,251.52820512820512 1176,243 C 1249.1333333333334,234.47179487179488 1344.5666666666666,217.23589743589744 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#222222ff"
+          class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
+      </svg>
+      <!-- Explicaçao-->
+      <section id="about">
+        <div class="about container" data-aos="fade-up" data-aos-duration="1000">
+          <h6 class="section-title">Sobre</h6>
+          <div class="about-wrapper">
+            <div class="left">
+              <div>
+                <img loading="lazy" src="img/icon/dev-experience.svg" alt="dev-experience-icon" />
+                <h2>
+                  <span class="green counter">02</span>
+                  <span class="green"> Years</span>
+                  Job Experience
+                </h2>
+              </div>
+              <div>
+                <img loading="lazy" src="img/icon/projects-icon.svg" alt="projects-icon" />
+                <h2>
+                  <span class="green counter">08</span><span class="green">+</span> Projects Completed
+                </h2>
+              </div>
+            </div>
+            <div class="right">
+              <h2>
+                O que é o
+                <span class="green">Start_End?</span>
+              </h2>
+              <p>
+                É uma maratona itinerante de inovação realizada em ciclos e desenvolvida em escolas públicas e privadas,
+                para jovens de 14 a 24 anos. Estartamos a nossa jornada com os jovens, visando despertá-los e fazer
+                compreender a importância da ciência agregada a tecnologia, a evolução e seu impacto no mercado de
+                trabalho, gerando novas profissões, produtos e / ou serviços.
+              </p>
+              <p>
+                Profissões – Desenvolvimento de alunos por meio de mini cursos e workshop, orientando os jovens a se
+                capacitarem para o mercado de trabalho.
+                Produtos – Recrutamento e seleção gamificado para jovens em fase acadêmica, onde somos orientados por
+                dados e resultados, usando metodologia própria contemplada com o 1º lugar no Prêmio SEBRAE de Educação
+                Empreendedora do Amazonas, evento de educação empreendedora, inovação e novas profissões, desenvolvido
+                para jovens.
+                Serviços – Organização e realização de
+                Ideathons, Inovathons e Hackatons
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <h6 class="section-title">Integrantes</h6>
+          <div class="milestones">
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Lider</h3>
+                    <h2 class="title education">
+                      Erick Matos
+                    </h2>
+                    <h3 class="sub-title school">Fundador do Start_End</h3>
+                    <p class="description">
+                      Administrador, Especialista em
+                      Comércio Exterior e Tecnólogo
+                      em Logística Empresarial,
+                      Consultor de Negócios onde
+                      inspira clientes nas áreas de
+                      gestão, tecnologia e inovação.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Vice-Lider</h3>
+                    <h2 class="title education">Helen Araujo</h2>
+                    <h3 class="sub-title school">Advogada e Empreendedora</h3>
+                    <p class="description">
+                      Cofundadora da Trilha do Aprendiz
+                      startup que aborda a lei da
+                      Aprendizagem, ECA, LGPD. Atuo
+                      com assessoria jurídica para
+                      empresas e pessoas que buscam
+                      segurança nos processos frente ao
+                      novo mercado digital na advogacia.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Ilustradora</h3>
+                    <h2 class="title education">Sannay Duarte
+                    </h2>
+                    <h3 class="sub-title school">Desenvolvedora Front End</h3>
+                    <p class="description">
+                      Entusiasta de game, e artes
+                      digitais, apaixonada pelo
+                      impacto posito real que
+                      pequenas mudanças podem
+                      causar na vida de pessoas.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">Back-end</h3>
+                    <h2 class="title education">
+                      Cristophe Damião
+                    </h2>
+                    <h3 class="sub-title school">Desenvolvedor Back-End</h3>
+                    <p class="description">
+                      ---
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Special Milestones -->
+      <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <style>
+          .path-0 {
+            animation: pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes pathAnim-0 {
+            0% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            25% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 62.7923076923077,160.5179487179487 125.5846153846154,121.03589743589743 199,126 C 272.4153846153846,130.96410256410257 356.45384615384614,180.37435897435896 443,215 C 529.5461538461539,249.62564102564104 618.6000000000001,269.4666666666667 713,246 C 807.3999999999999,222.53333333333333 907.1461538461538,155.75897435897434 987,144 C 1066.8538461538462,132.24102564102566 1126.8153846153846,175.4974358974359 1199,194 C 1271.1846153846154,212.5025641025641 1355.5923076923077,206.25128205128203 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            50% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 76.36666666666665,193.56923076923078 152.7333333333333,187.13846153846154 230,176 C 307.2666666666667,164.86153846153846 385.4333333333334,149.0153846153846 470,151 C 554.5666666666666,152.9846153846154 645.5333333333333,172.80000000000004 720,174 C 794.4666666666667,175.19999999999996 852.4333333333333,157.7846153846154 922,150 C 991.5666666666667,142.2153846153846 1072.7333333333333,144.06153846153848 1161,154 C 1249.2666666666667,163.93846153846152 1344.6333333333332,181.96923076923076 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            75% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 65.16666666666669,221.14102564102564 130.33333333333337,242.28205128205127 223,244 C 315.66666666666663,245.71794871794873 435.83333333333326,228.01282051282053 521,214 C 606.1666666666667,199.98717948717947 656.3333333333334,189.66666666666666 728,206 C 799.6666666666666,222.33333333333334 892.8333333333333,265.3205128205128 974,265 C 1055.1666666666667,264.6794871794872 1124.3333333333335,221.05128205128204 1200,203 C 1275.6666666666665,184.94871794871796 1357.8333333333333,192.47435897435898 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+
+            100% {
+              d: path("M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
+                );
+            }
+          }
+        </style>
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 75.28461538461539,167.45897435897436 150.56923076923078,134.91794871794872 239,134 C 327.4307692307692,133.08205128205128 429.0076923076923,163.7871794871795 513,172 C 596.9923076923077,180.2128205128205 663.4000000000001,165.93333333333337 741,183 C 818.5999999999999,200.06666666666663 907.3923076923077,248.47948717948714 977,269 C 1046.6076923076923,289.52051282051286 1097.0307692307692,282.14871794871794 1171,266 C 1244.9692307692308,249.85128205128206 1342.4846153846154,224.92564102564103 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none" stroke-width="0" fill="#222222ff"
+          class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
+      </svg>
+
+
+
+
+
+
+
+
+      <a title="Go to top." href="#to-top">
+        <div class="to-top"><i class="fa-solid fa-angles-up"></i></div>
+      </a>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/tilt.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"
+        target="_blank"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="https://kit.fontawesome.com/0a73ff5289.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="./js/counter.min.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+      <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <!-- Snow Flakes in December -->
+      <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+      <script>
+        const d = new Date();
+        let month = d.getMonth();
+        if (month == 11) {
+          var snowflakes = new Snowflakes({ count: 20 });
+        } else {
+          null;
+        }
+      </script>
+
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-9ZW2LKR6BL");
+      </script>
+      <a title="Go to top." href="#to-top">
+        <div class="to-top"><i class="fa-solid fa-angles-up"></i></div>
+      </a>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/tilt.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"
+        target="_blank"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="https://kit.fontawesome.com/0a73ff5289.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="./js/counter.min.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+      <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <!-- Snow Flakes in December -->
+      <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+      <script>
+        const d = new Date();
+        let month = d.getMonth();
+        if (month == 11) {
+          var snowflakes = new Snowflakes({ count: 20 });
+        } else {
+          null;
+        }
+      </script>
+</body>
+
+</html>
